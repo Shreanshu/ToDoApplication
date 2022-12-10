@@ -11,7 +11,7 @@ let setStyling;
 
 
 export const ToDoList = () => {
-    const title = `To Do List Application`;
+    const title = `To-Do Application`;
 
     const inputRef = useRef();
 
