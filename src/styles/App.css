@@ -14,7 +14,9 @@ body {
     max-height: auto;
     margin: 0;
     padding: 3% 0;
-    background: linear-gradient(0deg, rgba(69,58,255,1) 0%, rgba(255,255,255,1) 100%);
+    background-image: url("https://www.teahub.io/photos/full/1-17548_foggy-forest-hd-wallpaper-foggy-forest-hd-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 1.3em;
     box-sizing: border-box;
 }
