@@ -1,0 +1,189 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: auto;
+    margin: 0;
+    padding: 3% 0;
+    background-color: rgb(0, 255, 145);
+    font-size: 1.3em;
+    box-sizing: border-box;
+}
+
+#main .heading {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6em;
+    word-spacing: 0.2em;
+    letter-spacing: 0.03em;
+}
+
+#main .create-todo {
+    width: 50%;
+    margin: 5% auto;
+    padding: 0;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main .create-todo .input-task {
+    width: 45%;
+    padding: 1% 2%;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#main .create-todo .input-task:focus {
+    outline: 1px solid black;
+    transform: scaleX(1.1);
+}
+
+#main .create-todo .add-task {
+    width: 20%;
+    padding: 0.7% 0;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+#main .create-todo .add-task:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#main .create-todo .add-task:enabled:hover {
+    background-color:rgb(255, 81, 81);
+    color: black;
+}
+
+#main .create-todo .add-task:enabled:active {
+    transform: scale(1.03);
+}
+
+#main .display-todo {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#main .display-todo .task {
+    width: 22%;
+    margin: 1%;
+    padding: 1.6% 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main .display-todo .task:hover {
+    background-color: rgb(255, 103, 103);
+    border: 1.5px solid black;
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+#main .display-todo .selected {
+    width: 22%;
+    margin: 1%;
+    padding: 1.6% 0;
+    background-color: rgb(255, 135, 135);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    transform: scale(1.2);
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main .display-todo .disable {
+    width: 22%;
+    margin: 1%;
+    padding: 1.6% 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    transition: 0.5s;
+    opacity: 0.8;
+    cursor: not-allowed;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main .display-todo .task .text,
+#main .display-todo .selected .text,
+#main .display-todo .disable .text {
+    width: 45%;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    word-wrap: normal;
+}
+
+#main .display-todo .task .modify-button,
+#main .display-todo .selected .modify-button,
+#main .display-todo .disable .modify-button {
+    width: 18%;
+    padding: 1% 0;
+    font-size: 0.6em;
+    font-weight: 700;
+    border: 1px soild black;
+    border-radius: 3px;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#main .display-todo .task .modify-button:disabled,
+#main .display-todo .selected .modify-button:disabled,
+#main .display-todo .disable .modify-button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+#main .display-todo .task .modify-button:enabled:hover {
+    background-color: black;
+    transform: scale(1.1)
+}
+
+#main .display-todo .task .modify-button:enabled:active {
+    transform: scale(1.15);
+}
